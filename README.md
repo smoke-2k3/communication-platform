@@ -5,11 +5,8 @@ This project is a communication platform that allows users to log in using Googl
 ## Features
 
 - User authentication with Google OAuth
-- View communication history (sent and received emails)
 - Compose and send emails using the Postmarkapp.com API
 - Integration with Postmarkapp.com for email delivery
-- Email templates for onboarding, marketing, transactional, and engagement emails
-- Email analytics (opens, clicks, unsubscribes)
 
 ## Installation
 
@@ -25,7 +22,7 @@ This project is a communication platform that allows users to log in using Googl
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/communication-platform.git
+    git clone https://github.com/smoke-2k3/communication-platform.git
     cd communication-platform/backend
     ```
 
@@ -38,18 +35,11 @@ This project is a communication platform that allows users to log in using Googl
 3. Create a `.env` file in the `backend` directory and add the following environment variables:
 
     ```env
-    PORT=3000
     MONGO_URI=your_mongodb_atlas_uri
     GOOGLE_CLIENT_ID=your_google_client_id
     GOOGLE_CLIENT_SECRET=your_google_client_secret
     JWT_SECRET=your_jwt_secret
     POSTMARK_API_KEY=your_postmark_api_key
-    ```
-
-4. Start the backend server:
-
-    ```bash
-    npm start
     ```
 
 ### Frontend Setup
@@ -66,23 +56,21 @@ This project is a communication platform that allows users to log in using Googl
     npm install
     ```
 
-3. Create a `.env` file in the `frontend` directory and add the following environment variable:
-
-    ```env
-    REACT_APP_GOOGLE_CLIENT_ID=your_google_client_id
-    ```
-
-4. Start the frontend application:
+4. Build frontend:
 
     ```bash
-    npm start
+    npm run build
     ```
 
 ### Running the Application
 
-1. Open your browser and navigate to `http://localhost:3000` to access the frontend application.
-2. Click the "Login with Google" button to log in using your Google account.
-3. After logging in, you will be redirected to the dashboard where you can view your communication history and send emails.
+1.     ```bash
+    cd backend
+   node server.js
+    ```
+3. Open your browser and navigate to `http://localhost:3000` to access the frontend application.
+4. Click the "Login with Google" button to log in using your Google account.
+5. After logging in, you will be redirected to the dashboard where you can view your communication history and send emails.
 
 ## Directory Structure
 
