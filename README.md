@@ -64,13 +64,11 @@ This project is a communication platform that allows users to log in using Googl
 
 ### Running the Application
 
-1.     ```bash
+1.
+    ```bash
     cd backend
    node server.js
     ```
 3. Open your browser and navigate to `http://localhost:3000` to access the frontend application.
 4. Click the "Login with Google" button to log in using your Google account.
-5. After logging in, you will be redirected to the dashboard where you can view your communication history and send emails.
-
-## Directory Structure
 
